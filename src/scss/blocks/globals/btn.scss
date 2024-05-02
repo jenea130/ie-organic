@@ -1,0 +1,20 @@
+.btn {
+  display: inline-flex;
+  position: relative;
+  padding: 2.8rem 3.9rem;
+  font-family: var(--font-2);
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  background: #274c5b;
+  border-radius: 1.6rem;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/i/static/button-arrow.svg') no-repeat;
+  }
+}

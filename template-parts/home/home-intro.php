@@ -1,11 +1,20 @@
 <?php
 $home_intro = get_field('home_intro');
 $title=$home_intro['title'];
-$text=$home_intro['text'];
-$img=$home_intro['img'];
-$file=$home_intro['file'];
-$button=$home_intro['button'];
+$label=$home_intro['label'];
+$background = $home_intro['background'];
+$image=$home_intro['image'];
+$button_text =$home_intro['button_text'];
 ?>
 
 <div class="home-intro">
+  <img class="home-intro__bg" src="<?php echo $background; ?>" alt="">
+  <img class="home-intro__img" src="<?php echo $image; ?>" alt="">
+  <div class="container">
+    <div class="home-intro__content">
+      <div class="home-intro__label"><?php echo $label; ?></div>
+      <h1 class="home-intro__title"><?php echo $title; ?></h1>
+      <a href="#" class="btn"><?php echo $button_text; ?></a>
+    </div>
+  </div>
 </div>
