@@ -1,0 +1,44 @@
+.text-columns {
+  margin-bottom: 100px;
+  column-count: 3;
+  column-gap: 4.7%;
+  @media screen and (max-width: 992px) {
+    column-count: 2;
+  }
+  @media screen and (max-width: 576px) {
+  	column-count: initial;
+  }
+  &.text-columns-4 {
+    column-count: 4;
+    column-gap: 2%;
+  }
+  strong {
+    font-weight: normal;
+    color: $congressBlue;
+  }
+}
+.text-columns__item {
+  margin-bottom: 73px;
+  padding-top: 5px;
+  break-inside: avoid;
+}
+.text-columns__title {
+  margin-bottom: 20px;
+  font-family: GreyscaleBasic, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  color: $congressBlue;
+  @media screen and (max-width: 576px) {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+.text-columns__text {
+  line-height: 1.6;
+  letter-spacing: .3px;
+  text-align: justify;
+  @media screen and (max-width: 576px) {
+    text-align: center;
+  }
+}

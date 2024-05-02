@@ -1,0 +1,79 @@
+.page-privacy {
+  padding: 12rem 0 8rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 5.4rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .red {
+    display: inline-block;
+    color: red;
+    border: 1px solid red;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  ul {
+    li {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+      list-style-type: circle;
+    }
+  }
+
+  p {
+    margin-bottom: 3rem;
+  }
+}
+
+.page-privacy table {
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+
+.page-privacy th {
+  color: white;
+  background-color: #444;
+}
+
+.page-privacy th,
+.page-privacy td {
+  padding: 1rem 2rem;
+  border: 1px solid #aaa;
+}
+
+@media screen and (max-width: 750px) {
+  .page-privacy .overflow-inner {
+    overflow-x: auto;
+  }
+
+  .page-privacy table {
+    width: 750px;
+  }
+}

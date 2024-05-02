@@ -1,0 +1,43 @@
+.language {
+  position: relative;
+  top: 6px;
+  text-align: left;
+  &__current {
+    padding: 0 3.2rem;
+    text-align: left;
+    cursor: pointer;
+  }
+  .widget_wpglobus {
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+  .widget-title {
+    display: none;
+  }
+  .list {
+    padding: 3.2rem;
+    background: var(--accent);
+    a {
+      display: block;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      opacity: 0.8;
+      transition: all .4s;
+      &:not(:last-of-type) {
+        margin-bottom: 3.2rem;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .code {
+      display: none !important;
+    }
+  }
+}
+

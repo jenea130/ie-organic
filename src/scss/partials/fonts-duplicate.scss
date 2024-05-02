@@ -1,0 +1,53 @@
+//100	Тонкий (Волосяной) Thin (Hairline)
+//200	Дополнительный светлый (Сверхсветлый) Extra Light (Ultra Light)
+//300	Светлый Light
+//400	Нормальный Normal
+//500	Средний Medium
+//600	Полужирный Semi Bold (Demi Bold)
+//700	Жирный Bold
+//800	Дополнительный жирный (Сверхжирный) Extra Bold (Ultra Bold)
+//900	Черный (Густой)Black (Heavy)
+
+@font-face {
+  font-family: "GreyscaleBasic";
+  src: url("../fonts/GreyscaleBasicRegular.woff2") format("woff2"),
+    url("../fonts/GreyscaleBasicRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GreyscaleBasic";
+  src: url("../fonts/GreyscaleBasicBold.woff2") format("woff2"),
+    url("../fonts/GreyscaleBasicBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Regular.woff2") format("woff2"),
+    url("../fonts/Graphik-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Medium.woff2") format("woff2"),
+    url("../fonts/Graphik-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Semibold.woff2") format("woff2"),
+    url("../fonts/Graphik-Semibold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}

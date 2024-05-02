@@ -1,0 +1,78 @@
+@mixin reset-list() {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin size($number) {
+    width: $number;
+    height: $number;
+}
+
+@mixin placeholder-input($color, $text-align) {
+    &[type="text"]::-webkit-input-placeholder,
+    &[type="email"]::-webkit-input-placeholder,
+    &[type="tel"]::-webkit-input-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+
+    &[type="text"]::-moz-placeholder,
+    &[type="email"]::-moz-placeholder,
+    &[type="tel"]::-moz-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+
+    /* webkit */
+    &[type="text"]:-moz-placeholder,
+    &[type="email"]:-moz-placeholder,
+    &[type="tel"]:-moz-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+
+    /* webkit */
+    &[type="text"]:-ms-input-placeholder,
+    &[type="email"]:-ms-input-placeholder,
+    &[type="tel"]:-ms-input-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+}
+
+@mixin placeholder-textarea($color, $text-align) {
+    &::-webkit-input-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+
+    /* webkit */
+    &::-moz-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+
+    /* webkit */
+    &:-moz-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+
+    /* webkit */
+    &:-ms-input-placeholder {
+        text-align: $text-align;
+        color: $color;
+    }
+}
+
+// Grids
+@mixin gridCards($type: fit, $min: 280px, $max: 1fr, $gap: 30px) {
+    display: grid;
+    gap: $gap;
+    grid-template-columns: repeat(auto-#{$type}, minmax($min, $max));
+}
+
+@function lh($fontSize, $lineHeight) {
+    @return $lineHeight / $fontSize;
+}

@@ -1,0 +1,64 @@
+.single-blog-styles {
+  h1, h2, h3 {
+    margin: 0 0 3.2rem;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    margin-bottom: 3.2rem;
+    font-size: 2rem;
+    line-height: 1.6;
+    strong {
+      font-weight: bold;
+    }
+    a {
+      text-decoration: underline;
+      color: var(--accent);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  blockquote {
+    background: linear-gradient(45deg, #eddbff, transparent);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    border-radius: 4px;
+  }
+  img.alignleft {
+    float: left; /* replaces the style previously inherited by the browser */
+    margin: 0 16px 16px 0;
+  }
+  img.alignright {
+    float: right; /* replaces the style previously inherited by the browser */
+    margin: 16px 0 0 16px;
+  }
+  ul {
+    margin: 3.2rem 0;
+    padding-left: 3.2rem;
+    list-style-type: disc;
+  }
+  table {
+    border-collapse: collapse;
+    tr:first-of-type {
+      td {
+        color: white;
+        background: #333;
+      }
+    }
+    th, td {
+      padding: 1rem;
+      border: 1px solid #ddd;
+    }
+  }
+}
+
