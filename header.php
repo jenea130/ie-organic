@@ -45,6 +45,16 @@
         'depth'           => 0,
         'walker'          => '',
       ]); ?>
+      <div class="main-header__buttons">
+        <div class="main-header__search">
+          <input type="text">
+          <?php get_template_part('template-parts/icons/icon-search'); ?>
+        </div>
+        <div class="main-header__cart">
+          <?php get_template_part('template-parts/icons/icon-cart'); ?>
+          <span>Cart (0)</span>
+        </div>
+      </div>
 
       <div class="main-header__sandwich sandwitch-wrap" id="js-sandwitch-wrap">
         <div class="sandwitch">

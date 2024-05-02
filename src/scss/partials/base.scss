@@ -20,7 +20,7 @@ body {
   height: 100%;
   position: relative;
   margin: 0;
-  padding-top: 97px;
+  // padding-top: 97px;
   font-family: var(--font-1);
   font-size: 1.8rem;
   color: var(--text-color);
@@ -31,10 +31,10 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    display: none;
+    display: block;
     width: 1px;
     height: 100%;
-    background-color: yellow;
+    background-color: blue;
     z-index: 1000;
   }
 
