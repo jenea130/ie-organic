@@ -1,0 +1,41 @@
+.natural {
+  margin-bottom: 19rem;
+  &__wrap {
+    display: flex;
+    column-gap: 3.6rem;
+  }
+  &__item {
+    position: relative;
+    flex: 1;
+    height: 36.7rem;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    z-index: 1;
+  }
+  &__content {
+    position: relative;
+    padding-top: 11.6rem;
+    padding-left: 5.5rem;
+    max-width: 32rem;
+    z-index: 2;
+  }
+  &__label {
+    margin-bottom: 0.5rem;
+  }
+  &__title {
+    font-family: var(--font-2);
+    font-weight: 800;
+    font-size: 40px;
+    color: #274c5b;
+    &--light {
+      color: #fff;
+    }
+  }
+}

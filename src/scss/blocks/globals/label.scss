@@ -1,0 +1,9 @@
+.label {
+  font-family: var(--font-3);
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: var(--text-accent);
+  &.label--light {
+    color: #fff;
+  }
+}

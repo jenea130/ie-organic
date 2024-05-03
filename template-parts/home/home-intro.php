@@ -12,7 +12,7 @@ $button_text =$home_intro['button_text'];
   <img class="home-intro__img" src="<?php echo $image; ?>" alt="">
   <div class="container">
     <div class="home-intro__content">
-      <div class="home-intro__label"><?php echo $label; ?></div>
+      <div class="home-intro__label label"><?php echo $label; ?></div>
       <h1 class="home-intro__title"><?php echo $title; ?></h1>
       <?php btnComponent('#', $button_text, 'btn--accent'); ?>
     </div>
