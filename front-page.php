@@ -9,5 +9,7 @@ get_header();
 <div class="container">
   <?php get_template_part('template-parts/home/natural'); ?>
 </div>
+<?php get_template_part('template-parts/home/believe'); ?>
+
 
 <?php get_footer(); ?>

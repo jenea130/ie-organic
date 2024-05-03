@@ -4,6 +4,7 @@
 @import "partials/base";
 @import "partials/scrollbar";
 @import "blocks/main-header";
+@import "blocks/header/search";
 @import "blocks/header/main-menu";
 @import "blocks/header/sandwitch.scss";
 @import "blocks/main-footer";
@@ -18,3 +19,4 @@
 // Home page
 @import "blocks/home/home-intro";
 @import "blocks/home/natural";
+@import "blocks/home/believe";

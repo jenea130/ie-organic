@@ -46,9 +46,24 @@
         'walker'          => '',
       ]); ?>
       <div class="main-header__buttons">
-        <div class="main-header__search">
-          <input type="text">
-          <?php get_template_part('template-parts/icons/icon-search'); ?>
+        <div class="main-header__search search">
+          <div class="search__body">
+            <input class="search__input" type="text">
+            <ul class="search__list">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search__icon">
+            <?php get_template_part('template-parts/icons/icon-search'); ?>
+          </div>
         </div>
         <div class="main-header__cart">
           <?php get_template_part('template-parts/icons/icon-cart'); ?>

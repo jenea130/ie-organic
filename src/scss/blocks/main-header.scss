@@ -49,9 +49,9 @@
   &__sandwich {
     display: none;
     @media screen and (max-width: 992px) {
-      position: absolute;
-      top: 1.2rem;
-      right: 30px;
+      // position: absolute;
+      // top: 1.2rem;
+      // right: 30px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -89,7 +89,8 @@
     margin-right: 14rem;
     z-index: 2;
     @media screen and (max-width: 1200px) {
-      width: 12rem;
+      // width: 12rem;
+      margin-right: 5rem;
     }
   }
   &__buttons {
@@ -97,30 +98,6 @@
     display: flex;
     align-items: center;
     column-gap: 1.8rem;
-  }
-  &__search {
-    position: relative;
-    width: 37.6rem;
-    input {
-      padding: 23px 70px 23px 0;
-      border-radius: 36px;
-      width: 100%;
-      text-indent: 30px;
-      font-size: 1.8rem;
-      color: #6a6a6a;
-      background: #fafafa;
-      border: none;
-      outline: none;
-      &:focus {
-        outline: 1px solid #e0e0e0;
-      }
-    }
-    svg {
-      position: absolute;
-      top: 50%;
-      right: 5px;
-      transform: translateY(-50%);
-    }
   }
   &__cart {
     display: flex;
