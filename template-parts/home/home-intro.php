@@ -14,7 +14,7 @@ $button_text =$home_intro['button_text'];
     <div class="home-intro__content">
       <div class="home-intro__label"><?php echo $label; ?></div>
       <h1 class="home-intro__title"><?php echo $title; ?></h1>
-      <?php btnComponent('#', $button_text, ''); ?>
+      <?php btnComponent('#', $button_text, 'btn--accent'); ?>
     </div>
   </div>
 </div>

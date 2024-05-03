@@ -26,7 +26,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    // width: 56%;
     width: 108rem;
     height: 100%;
     object-fit: cover;
@@ -47,11 +46,11 @@
     color: var(--text-accent);
   }
   &__title {
-    margin-bottom: 2.3rem;
+    margin-bottom: 2.1rem;
     font-family: var(--font-2);
     font-weight: 800;
     font-size: 7rem;
     line-height: 1.2;
-    color: var(--title-color);
+    color: var(--accent);
   }
 }
