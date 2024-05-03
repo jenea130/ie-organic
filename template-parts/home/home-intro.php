@@ -14,7 +14,7 @@ $button_text =$home_intro['button_text'];
     <div class="home-intro__content">
       <div class="home-intro__label"><?php echo $label; ?></div>
       <h1 class="home-intro__title"><?php echo $title; ?></h1>
-      <a href="#" class="btn"><?php echo $button_text; ?></a>
+      <?php btnComponent('#', $button_text, ''); ?>
     </div>
   </div>
 </div>

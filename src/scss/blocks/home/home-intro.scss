@@ -26,15 +26,17 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 56%;
+    // width: 56%;
+    width: 108rem;
     height: 100%;
     object-fit: cover;
     z-index: 1;
   }
   &__content {
     position: absolute;
-    padding: 24.7rem 0 0 0;
+    padding: 25rem 0 0 0;
     max-width: 52rem;
+    background: transparent;
     z-index: 3;
   }
   &__label {
@@ -49,6 +51,7 @@
     font-family: var(--font-2);
     font-weight: 800;
     font-size: 7rem;
+    line-height: 1.2;
     color: var(--title-color);
   }
 }
