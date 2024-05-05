@@ -3,11 +3,19 @@
   &__wrap {
     display: flex;
     column-gap: 3.6rem;
+    @media screen and (max-width: 1200px) {
+      display: block;
+    }
   }
   &__item {
     position: relative;
     flex: 1;
     height: 36.7rem;
+  }
+  @media screen and (max-width: 1200px) {
+    .natural__item:not(:last-child) {
+      margin-bottom: 2rem;
+    }
   }
   &__img {
     position: absolute;
@@ -25,6 +33,17 @@
     padding-left: 5.5rem;
     max-width: 32rem;
     z-index: 2;
+    @media screen and (max-width: 1200px) {
+      max-width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 60%;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
   &__label {
     margin-bottom: 0.5rem;
