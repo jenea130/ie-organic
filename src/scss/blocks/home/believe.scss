@@ -1,4 +1,14 @@
 .believe {
-  padding: 15rem 0;
+  position: relative;
+  // padding: 15rem 0;
+  height: 106.7rem;
   background: #f9f8f8;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

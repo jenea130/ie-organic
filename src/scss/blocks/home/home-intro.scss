@@ -7,7 +7,7 @@
     height: 78rem;
   }
   @media screen and (max-width: 576px) {
-    height: 74rem;
+    height: 68rem;
   }
   &::before {
     content: "";
@@ -48,7 +48,8 @@
       padding-top: 20rem;
     }
     @media screen and (max-width: 576px) {
-      padding-top: 12rem;
+      padding-top: 16rem;
+      padding-right: 2rem;
     }
   }
   &__label {
@@ -56,10 +57,5 @@
   }
   &__title {
     margin-bottom: 2.1rem;
-    font-family: var(--font-2);
-    font-weight: 800;
-    font-size: 7rem;
-    line-height: 1.2;
-    color: var(--accent);
   }
 }

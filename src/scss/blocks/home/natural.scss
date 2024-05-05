@@ -40,7 +40,7 @@
       max-width: 60%;
     }
     @media screen and (max-width: 576px) {
-      max-width: 100%;
+      max-width: 80%;
       padding-left: 2rem;
       padding-right: 2rem;
     }
@@ -51,8 +51,11 @@
   &__title {
     font-family: var(--font-2);
     font-weight: 800;
-    font-size: 40px;
-    color: #274c5b;
+    font-size: 4rem;
+    color: var(--accent);
+    @media screen and (max-width: 576px) {
+      font-size: 3.2rem;
+    }
     &--light {
       color: #fff;
     }
