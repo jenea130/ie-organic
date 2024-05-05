@@ -66,7 +66,9 @@
           </div>
         </div>
         <div class="main-header__cart">
-          <?php get_template_part('template-parts/icons/icon-cart'); ?>
+          <div class="main-header__body">
+            <?php get_template_part('template-parts/icons/icon-cart'); ?>
+          </div>
           <span>Cart (0)</span>
         </div>
       </div>

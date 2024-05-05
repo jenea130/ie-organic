@@ -2,6 +2,12 @@
   margin-bottom: 15.4rem;
   position: relative;
   height: 89.8rem;
+  @media screen and (max-width: 768px) {
+    height: 78rem;
+  }
+  @media screen and (max-width: 576px) {
+    height: 74rem;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -37,6 +43,12 @@
     max-width: 52rem;
     background: transparent;
     z-index: 3;
+    @media screen and (max-width: 768px) {
+      padding-top: 20rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding-top: 12rem;
+    }
   }
   &__label {
     margin-bottom: 0.8rem;

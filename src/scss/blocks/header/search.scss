@@ -8,7 +8,7 @@
     @media screen and (max-width: 1500px) {
       display: none;
       position: fixed;
-      top: 20%;
+      top: 30rem;
       left: 50%;
       transform: translate(-50%, -10%);
       width: 600px;
@@ -25,7 +25,8 @@
       }
     }
     @media screen and (max-width: 768px) {
-      width: 95%;
+      width: 100%;
+      padding: 6.4rem 3rem;
     }
 
     &.show {
@@ -37,15 +38,14 @@
   }
   &__input {
     height: 66px;
-    // padding: 23px 70px 23px 0;
     padding-right: 70px;
-    border-radius: 36px;
     width: 100%;
     text-indent: 30px;
     font-size: 1.8rem;
     color: #6a6a6a;
     background: #fafafa;
-    // background: #555;
+    background: #555;
+    border-radius: 36px;
     border: none;
     outline: none;
     &:focus {
@@ -55,7 +55,6 @@
   &__list {
     display: none;
     padding-top: 3.2rem;
-    // display: none;
     a {
       display: block;
       text-align: center;
@@ -74,5 +73,15 @@
     top: 50%;
     right: 5px;
     transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    background: var(--accent-light);
+    border-radius: 50%;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
