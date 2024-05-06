@@ -31,7 +31,7 @@ require_once __DIR__ . '/shortcodes/email.php';
 require_once __DIR__ . '/components/btnComponent.php';
 require_once __DIR__ . '/components/ratingComponents.php';
 require_once __DIR__ . '/inc/ar-post-type.php'; 
-/* require_once __DIR__ . '/inc/ar-taxonomy.php'; */
+require_once __DIR__ . '/inc/ar-taxonomy.php'; 
 /* require_once __DIR__ . '/inc/activate-plugin.php'; */
 
 require_once __DIR__ . '/shortcodes/privacy.php';add_filter( 'acfwpcli_fieldgroup_paths', 'add_plugin_path' );

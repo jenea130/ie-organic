@@ -6,8 +6,8 @@ if (!defined('ABSPATH')) {
 add_action('init', 'create_taxonomy');
 function create_taxonomy()
 {
-    $field = "Categorie";
-    register_taxonomy('categorie', ['camere'], [
+    $field = "Product Category";
+    register_taxonomy('product-category', ['products'], [
         'label' => '',
         'labels' => [
             'name' => $field,
@@ -25,7 +25,7 @@ function create_taxonomy()
         ],
         'description' => '',
         'public' => true,
-        'hierarchical' => false,
+        'hierarchical' => true,
         'rewrite' => true,
         'capabilities' => array(),
         'meta_box_cb' => null,
