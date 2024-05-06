@@ -5,13 +5,13 @@
     text-align: center;
   }
   &__label {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
   &__wrap {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 4rem;
-    margin: 0 -1rem 10rem;
+    row-gap: 1.8rem;
+    margin: 0 -1rem 12.2rem;
   }
   &__item {
     position: relative;
@@ -40,7 +40,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 3rem 3rem;
+    padding: 3rem 3rem 1.9rem;
     height: 100%;
     width: 100%;
     z-index: 2;
