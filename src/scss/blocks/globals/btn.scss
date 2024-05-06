@@ -10,6 +10,12 @@
   background: var(--accent);
   border: 1px solid transparent;
   border-radius: 1.6rem;
+  transition: all .4s ease-in-out;
+  &:hover {
+    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--accent);
+  }
   &__circle {
     position: relative;
     width: 19px;
@@ -27,6 +33,9 @@
     padding: 2.8rem 3.7rem;
     color: var(--accent);
     background: var(--contrast);
+    &:hover {
+      background: transparent;
+    }
   }
   &.btn--transparent {
     color: var(--accent);

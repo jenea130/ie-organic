@@ -1,5 +1,14 @@
 .natural {
   margin-bottom: 19rem;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 16rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 13rem;
+  }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 11rem;
+  }
   &__wrap {
     display: flex;
     column-gap: 3.6rem;

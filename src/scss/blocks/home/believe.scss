@@ -2,6 +2,16 @@
   position: relative;
   padding-top: 19.2rem;
   height: 106.7rem;
+  @media screen and (max-width: 992px) {
+    padding-top: 16rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 13rem;
+  }
+  @media screen and (max-width: 576px) {
+    padding-top: 10rem;
+    background: #f9f8f8;
+  }
   img {
     position: absolute;
     top: 0;
@@ -10,12 +20,30 @@
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    @media screen and (max-width: 992px) {
+      object-position: -54rem center;
+    }
+    @media screen and (max-width: 768px) {
+      object-position: -74rem center;
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
   }
   &__content {
     margin: 0 0 0 auto;
     position: relative;
     max-width: 50.3%;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      max-width: 60%;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 74%;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+    }
   }
   &__label {
     margin-bottom: 0.8rem;
