@@ -2,10 +2,11 @@
 $products = get_field('products');
 $label = $products['label'];
 $title = $products['title'];
+$button_text = $products['button_text'];
 
 $product_posts = new WP_Query([
   'post_type' => 'products',
-  'posts_per_page' => 12
+  'posts_per_page' => 8
 ]);
 ?>
 
@@ -23,27 +24,30 @@ $product_posts = new WP_Query([
         $title = get_the_title();
         $permalink = get_the_permalink();
         ?>
-        <div class="products__item">
-          <div class="products__cat">
-            <span>Label</span>
-          </div>
+        <a href="#" class="products__item">
           <div class="products__img">
             <img src="<?php echo $image; ?>" alt="">
           </div>
-          <div class="products__footer">
-            <h4 class="products__title"><?php echo $title; ?></h4>
-            <div class="products__body">
+          <div class="products__body">
+            <div class="products__cat">
+              <span>Label</span>
+            </div>
+            <h4 class="products__subtitle"><?php echo $title; ?></h4>
+            <div class="products__footer">
               <span class="products__previous-price">20.00$</span>
               <span class="products__current-price">13.00$</span>
               <div class="products__rating">
-                <?php ratingComponent(2); ?>
+                <?php ratingComponent(4); ?>
               </div>
             </div>
           </div>
-        </div>
-
+        </a>
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>
     <?php endif; ?>
   </div>
+
+  <div class="products__align">
+    <?php btnComponent('#', $button_text, ''); ?>
+    </button></div>
 </div>
