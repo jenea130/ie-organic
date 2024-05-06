@@ -5,7 +5,7 @@ $title = $products['title'];
 
 $product_posts = new WP_Query([
   'post_type' => 'products',
-  'posts_per_page' => 8
+  'posts_per_page' => 12
 ]);
 ?>
 
@@ -30,12 +30,14 @@ $product_posts = new WP_Query([
           <div class="products__img">
             <img src="<?php echo $image; ?>" alt="">
           </div>
-          <h4 class="products__title"><?php echo $title; ?></h4>
           <div class="products__footer">
-            <span class="products__previous-price">20.00$</span>
-            <span class="products__next-price">13.00$</span>
-            <div class="products__rating">
-            <?php ratingComponent(2); ?>
+            <h4 class="products__title"><?php echo $title; ?></h4>
+            <div class="products__body">
+              <span class="products__previous-price">20.00$</span>
+              <span class="products__current-price">13.00$</span>
+              <div class="products__rating">
+                <?php ratingComponent(2); ?>
+              </div>
             </div>
           </div>
         </div>

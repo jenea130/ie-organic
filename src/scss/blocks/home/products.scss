@@ -8,18 +8,27 @@
   }
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 4rem;
     margin: 0 -1rem;
   }
   &__item {
+    position: relative;
     flex: 0 0 calc(100% / 4 - 2rem);
     margin: 0 1rem;
-    background: #f9f8f8;
+    border: 1px solid #f9f8f8;
+    border: 1px solid red;
+    border-radius: 30px;
   }
   &__cat {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
     display: inline-block;
     padding: 6px 12px;
     background: var(--accent);
     border-radius: 8px;
+    z-index: 2;
     span {
       display: block;
       font-weight: 600;
@@ -27,5 +36,55 @@
       text-align: center;
       color: #fff;
     }
+  }
+  &__img {
+    position: relative;
+    height: 48.3rem;
+    border: 1px solid red;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+      z-index: 1;
+    }
+  }
+  &__footer {
+    padding: 0 3rem 3rem;
+    margin-left: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  &__title {
+    margin-bottom: 1.3rem;
+    font-family: var(--font-2);
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--accent);
+  }
+  &__body {
+    display: flex;
+    padding-top: 0.6rem;
+    border-top: 1px solid #dedddd;
+    border: 1px solid red;
+  }
+  &__previous-price {
+    margin-right: 0.8rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #b8b8b8;
+    text-decoration: line-through;
+  }
+  &__current-price {
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--accent);
   }
 }
