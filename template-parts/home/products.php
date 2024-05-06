@@ -23,6 +23,10 @@ $product_posts = new WP_Query([
         $image = get_the_post_thumbnail_url();
         $title = get_the_title();
         $permalink = get_the_permalink();
+        $products_info = get_field('products_info');
+        $previous_price = $products_info['previous_price'];
+        $current_price = $products_info['current_price'];
+        $rating = $products_info['rating'];
         ?>
         <a href="#" class="products__item">
           <div class="products__img">
@@ -34,10 +38,10 @@ $product_posts = new WP_Query([
             </div>
             <h4 class="products__subtitle"><?php echo $title; ?></h4>
             <div class="products__footer">
-              <span class="products__previous-price">20.00$</span>
-              <span class="products__current-price">13.00$</span>
+              <span class="products__previous-price"><?php echo $previous_price; ?></span>
+              <span class="products__current-price"><?php echo $current_price; ?></span>
               <div class="products__rating">
-                <?php ratingComponent(4); ?>
+                <?php ratingComponent($rating); ?>
               </div>
             </div>
           </div>
