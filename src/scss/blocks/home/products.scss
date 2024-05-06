@@ -1,0 +1,31 @@
+.products {
+  &__content {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  &__label {
+    margin-bottom: 0.8rem;
+  }
+  &__wrap {
+    display: flex;
+    margin: 0 -1rem;
+  }
+  &__item {
+    flex: 0 0 calc(100% / 4 - 2rem);
+    margin: 0 1rem;
+    background: #f9f8f8;
+  }
+  &__cat {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--accent);
+    border-radius: 8px;
+    span {
+      display: block;
+      font-weight: 600;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

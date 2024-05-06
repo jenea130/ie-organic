@@ -29,7 +29,8 @@ require_once __DIR__ . '/shortcodes/vat.php';
 require_once __DIR__ . '/shortcodes/phone_number.php';
 require_once __DIR__ . '/shortcodes/email.php';
 require_once __DIR__ . '/template-parts/layouts/btnComponent.php';
-/* require_once __DIR__ . '/inc/ar-post-type.php'; */
+require_once __DIR__ . '/components/ratingComponents.php';
+require_once __DIR__ . '/inc/ar-post-type.php'; 
 /* require_once __DIR__ . '/inc/ar-taxonomy.php'; */
 /* require_once __DIR__ . '/inc/activate-plugin.php'; */
 

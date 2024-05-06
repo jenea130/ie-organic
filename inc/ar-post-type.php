@@ -1,23 +1,27 @@
 <?php
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
-add_action( 'init', 'my_custom_init' );
-function my_custom_init() {
-	register_post_type( 'servizi', array(
+add_action('init', 'my_custom_init');
+function my_custom_init()
+{
+
+	$label = 'Products';
+
+	register_post_type('products', array(
 		'labels'             => array(
-			'name'              => 'Servizi', // Основное название типа записи
-			'singular_name'     => 'Servizi', // отдельное название записи типа Book
-			'add_new'           => __( 'Aggiungi Servizi' ),
-			'add_new_item'      => __( 'Aggiungi Servizi' ),
-			'edit_item'         => __( 'Modifica Servizi' ),
-			'new_item'          => __( 'Nuova Servizi' ),
-			'view_item'         => __( 'Vedi' ),
-			'search_items'      => __( 'Cerca' ),
+			'name'              => 'Product', // Основное название типа записи
+			'singular_name'     => 'Product', // отдельное название записи типа Book
+			'add_new'           => __('Add Product'),
+			'add_new_item'      => __('Add Product'),
+			'edit_item'         => __('Edit Product'),
+			'new_item'          => __('New Product'),
+			'view_item'         => __('View'),
+			'search_items'      => __('Search'),
 			'parent_item_colon' => '',
-			'menu_name'         => 'Servizi'
+			'menu_name'         => 'Product'
 		),
 		'public'             => true,
 		'publicly_queryable' => true,
@@ -29,7 +33,7 @@ function my_custom_init() {
 		'has_archive'        => false,
 		'hierarchical'       => false,
 		'menu_position'      => 20,
-		'menu_icon'          => 'dashicons-admin-home',
-		'supports'           => array( 'title', 'thumbnail' )
-	) );
+		'menu_icon'          => get_template_directory_uri() . '/assets/i/static/product.png',
+		'supports'           => array('title', 'thumbnail')
+	));
 }

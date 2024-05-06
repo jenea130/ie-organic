@@ -6,4 +6,4 @@
       <?php get_template_part('template-parts/icons/icon-arrow'); ?>
     </div>
   </a>
-<? } ?>
+<?php } ?>
