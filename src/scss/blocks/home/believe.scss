@@ -1,16 +1,22 @@
 .believe {
   position: relative;
   padding-top: 19.2rem;
+  margin-bottom: 17.6rem;
   height: 106.7rem;
   @media screen and (max-width: 992px) {
     padding-top: 16rem;
   }
   @media screen and (max-width: 768px) {
     padding-top: 13rem;
+    height: 94rem;
   }
   @media screen and (max-width: 576px) {
     padding-top: 10rem;
+    height: 86rem;
     background: #f9f8f8;
+  }
+  @media screen and (max-width: 400px) {
+    height: 94rem;
   }
   img {
     position: absolute;
