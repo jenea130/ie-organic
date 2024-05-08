@@ -10,7 +10,7 @@
   background: var(--accent);
   border: 1px solid transparent;
   border-radius: 1.6rem;
-  transition: all .4s ease-in-out;
+  transition: all .3s ease-in-out;
   &:hover {
     color: var(--accent);
     background: transparent;
@@ -34,7 +34,7 @@
     color: var(--accent);
     background: var(--contrast);
     &:hover {
-      background: transparent;
+      background: white;
     }
   }
   &.btn--transparent {

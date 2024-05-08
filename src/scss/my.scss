@@ -12,6 +12,10 @@
 @import "blocks/globals/language";
 @import "blocks/blog/single-blog-styles";
 
+// Components
+@import "blocks/components/products-loop";
+
+
 // Globals
 @import "blocks/globals/btn";
 @import "blocks/globals/label";
@@ -25,3 +29,4 @@
 @import "blocks/home/believe";
 @import "blocks/home/products";
 @import "blocks/home/customer";
+@import "blocks/home/organic";

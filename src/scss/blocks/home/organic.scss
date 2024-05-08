@@ -1,0 +1,12 @@
+.organic {
+  padding: 20rem 0;
+  background: var(--accent);
+  &__content {
+    margin-bottom: 5rem;
+    display: flex;  
+    justify-content: space-between;
+  }
+  &__label {
+    margin-bottom: 0.8rem;
+  }
+}

@@ -3,6 +3,15 @@
   padding: 16.9rem 0;
   height: 126.7rem;
   background: #fcfcfc;
+  @media screen and (max-width: 992px) {
+    padding: 13rem 0 17rem;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 10rem 0 17rem;
+  }
+  @media screen and (max-width: 420px) {
+    // padding-bottom: 30rem;
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -13,10 +22,13 @@
     z-index: 1;
   }
   &__content {
-    margin-bottom: 23.4rem;
+    margin-bottom: 13.1rem;
     position: relative;
     text-align: center;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 3rem;
+    }
   }
   &__label {
     margin-bottom: 0.9rem;
@@ -62,12 +74,19 @@
   }
   &__wrap {
     position: relative;
+    padding-top: 10.2rem;
     display: flex;
     justify-content: center;
     column-gap: 6.2rem;
     max-width: 103rem;
     margin: 0 auto;
     z-index: 2;
+    border-top: 1px solid #e0e0e0;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      row-gap: 3rem;
+      padding-top: 3rem;
+    }
   }
   &__item {
     position: relative;
@@ -79,6 +98,9 @@
     height: 21.1rem;
     border-radius: 50%;
     border: 4px solid #7eb693;
+    @media screen and (max-width: 420px) {
+      flex: 0 0 auto;
+    }
   }
   &__fon {
     position: absolute;
