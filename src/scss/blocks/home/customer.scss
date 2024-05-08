@@ -1,6 +1,6 @@
 .customer {
   position: relative;
-  padding: 16.9rem 0;
+  padding: 16.9rem 0 17.1rem;
   height: 126.7rem;
   background: #fcfcfc;
   @media screen and (max-width: 992px) {
@@ -33,6 +33,29 @@
   }
   &__title {
     margin-bottom: 6.2rem;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .slick-dots li {
+    margin: 0 5px;
+    flex: 0 0 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+  }
+  .comment .slick-dots li.slick-active {
+    background: var(--accent);
+  }
+
+  .comment .slick-dots button {
+    display: none;
   }
   &__photo {
     margin-bottom: 2.1rem;

@@ -1,5 +1,5 @@
 .organic {
-  padding: 20rem 0;
+  padding: 20.4rem 0;
   background: var(--accent);
   &__content {
     margin-bottom: 5rem;
@@ -7,6 +7,9 @@
     justify-content: space-between;
   }
   &__label {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .btn {
+    align-self: flex-end;
   }
 }

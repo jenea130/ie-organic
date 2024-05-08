@@ -1,11 +1,12 @@
 jQuery(document).ready(function ($) {
-  $('.gallery__wrap').slick({
-    slidesToShow: 4,
-    autoplay: true,
+  $('.customer__body').slick({
+    slidesToShow: 1,
+    autoplay: false,
     variableWidth: true,
     slidesToScroll: 1,
     infinite: true,
-    arrows: true,
+    arrows: false,
+    dots: true,
     speed: 500,
     useTransform: true,
     responsive: [
