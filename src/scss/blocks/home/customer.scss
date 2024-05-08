@@ -1,0 +1,106 @@
+.customer {
+  position: relative;
+  padding: 16.9rem 0;
+  height: 126.7rem;
+  background: #fcfcfc;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__content {
+    margin-bottom: 23.4rem;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+  }
+  &__label {
+    margin-bottom: 0.9rem;
+  }
+  &__title {
+    margin-bottom: 6.2rem;
+  }
+  &__photo {
+    margin-bottom: 2.1rem;
+    position: relative;
+    height: 11.5rem;
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 11.5rem;
+      height: 11.5rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  &__rating {
+    display: inline-block;
+    margin: 0 auto 2.7rem;
+  }
+  &__text {
+    max-width: 54%;
+    margin: 0 auto 1.9rem;
+    line-height: 1.654;
+  }
+  &__name {
+    font-family: var(font-2);
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--accent);
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.654;
+    color: var(--text-color);
+  }
+  &__wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    column-gap: 6.2rem;
+    max-width: 103rem;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21.1rem;
+    height: 21.1rem;
+    border-radius: 50%;
+    border: 4px solid #7eb693;
+  }
+  &__fon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18.9rem;
+    height: 18.9rem;
+    border-radius: 50%;
+    background: #f1f1f1;
+    z-index: -1;
+  }
+  &__number {
+    font-family: var(--font-2);
+    font-weight: 800;
+    font-size: 5rem;
+    color: var(--accent);
+  }
+  &__about {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.654;
+    color: var(--accent);
+  }
+}

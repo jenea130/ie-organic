@@ -13,6 +13,7 @@ get_header();
 <div class="container">
   <?php get_template_part('template-parts/home/products'); ?>
 </div>
+<?php get_template_part('template-parts/home/customer'); ?>
 
 
 <?php get_footer(); ?>

@@ -27,14 +27,17 @@ $product_posts = new WP_Query([
         $previous_price = $products_info['previous_price'];
         $current_price = $products_info['current_price'];
         $rating = $products_info['rating'];
+        $terms = get_the_terms(get_the_ID(), 'product-category');
+        $cat = $terms[0]->name;
         ?>
-        <a href="#" class="products__item">
+        
+        <a href="<?php echo $permalink; ?>" class="products__item">
           <div class="products__img">
             <img src="<?php echo $image; ?>" alt="">
           </div>
           <div class="products__body">
             <div class="products__cat">
-              <span>Label</span>
+              <span><?php echo $cat; ?></span>
             </div>
             <h4 class="products__subtitle"><?php echo $title; ?></h4>
             <div class="products__footer">
