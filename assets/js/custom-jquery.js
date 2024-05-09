@@ -1,8 +1,8 @@
 jQuery(document).ready(function ($) {
-  $('.customer__body').slick({
+  $('.customer__slider').slick({
     slidesToShow: 1,
     autoplay: false,
-    variableWidth: true,
+    variableWidth: false,
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
@@ -10,28 +10,28 @@ jQuery(document).ready(function ($) {
     speed: 500,
     useTransform: true,
     responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3
-        }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: true
-        }
-      }
+      // {
+      //   breakpoint: 1400,
+      //   settings: {
+      //     slidesToShow: 3,
+      //     slidesToScroll: 3
+      //   }
+      // },
+      // {
+      //   breakpoint: 1200,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2
+      //   }
+      // },
+      // {
+      //   breakpoint: 768,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     adaptiveHeight: true
+      //   }
+      // }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
