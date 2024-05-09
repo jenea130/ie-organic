@@ -15,6 +15,7 @@ get_header();
 </div>
 <?php get_template_part('template-parts/home/customer'); ?>
 <?php get_template_part('template-parts/home/organic'); ?>
+<?php get_template_part('template-parts/home/store'); ?>
 
 
 <?php get_footer(); ?>
