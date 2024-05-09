@@ -1,13 +1,25 @@
 .organic {
   padding: 20.4rem 0 20rem;
   background: var(--accent);
+  @media screen and (max-width: 992px) {
+    padding: 16rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 12rem 0;
+  }
   &__content {
     margin-bottom: 5rem;
     display: flex;  
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   &__label {
     margin-bottom: 1.2rem;
+  }
+  &__title {
+    margin-bottom: 3rem;
   }
   .btn {
     align-self: flex-end;

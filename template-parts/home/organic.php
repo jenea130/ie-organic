@@ -17,10 +17,6 @@ $args = array(
 );
 $product_posts = new WP_Query($args);
 
-// $product_posts = new WP_Query([
-//   'post_type' => 'products',
-//   'posts_per_page' => 4,
-// ]);
 ?>
 <div class="organic">
   <div class="container">
