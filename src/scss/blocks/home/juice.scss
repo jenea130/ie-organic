@@ -1,0 +1,43 @@
+.juice {
+  padding: 18.7rem 0;
+  background: #f1f8f4;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 4.2rem;
+  }
+  &__item {
+    position: relative;
+    flex: 1;
+    height: 58.3rem;
+    // padding-bottom: 30%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 2rem;
+    z-index: 2;
+  }
+  &__title {
+    padding: 3.4rem 7.5rem;
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--accent);
+  }
+}

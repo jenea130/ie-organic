@@ -16,6 +16,7 @@ get_header();
 <?php get_template_part('template-parts/home/customer'); ?>
 <?php get_template_part('template-parts/home/organic'); ?>
 <?php get_template_part('template-parts/home/store'); ?>
+<?php get_template_part('template-parts/home/juice'); ?>
 
 
 <?php get_footer(); ?>
