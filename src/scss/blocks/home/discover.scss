@@ -1,0 +1,14 @@
+.discover {
+  &__content {
+    margin-bottom: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__label {
+    margin-bottom: 0.8rem;
+  }
+  &__title {
+    max-width: 80rem;
+  }
+}

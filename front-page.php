@@ -17,6 +17,9 @@ get_header();
 <?php get_template_part('template-parts/home/organic'); ?>
 <?php get_template_part('template-parts/home/store'); ?>
 <?php get_template_part('template-parts/home/juice'); ?>
+<div class="container">
+  <?php get_template_part('template-parts/home/discover'); ?>
+</div>
 
 
 <?php get_footer(); ?>
