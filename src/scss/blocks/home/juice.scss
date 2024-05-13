@@ -2,8 +2,12 @@
   padding: 18.7rem 0;
   margin-bottom: 18rem;
   background: #f1f8f4;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 13rem;
+  }
   @media screen and (max-width: 576px) {
     padding: 12rem 0;
+    margin-bottom: 9rem;
   }
   &__wrap {
     display: flex;
