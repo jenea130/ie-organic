@@ -1,15 +1,42 @@
 .main-footer {
   margin-bottom: 13.8rem;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 7rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
+  @media screen and (max-width: 576px) {
+  margin-bottom: 3rem;
+  }
   &__wrap {
     display: flex;
     max-width: 120rem;
     margin: 0 auto;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    @media screen and (max-width: 576px) {
+      justify-content: flex-start;
+    }
   }
   &__contact {
     padding-bottom: 5.1rem;
     padding-right: 5.1rem;
     margin-right: 6.2rem;
     border-right: 1px solid #d4d4d4;
+    @media screen and (max-width: 992px) {
+      margin-right: 0;
+      order: 2;
+    }
+    @media screen and (max-width: 576px) {
+      flex: 0 0 100%;
+      padding-left: 5rem;
+      padding-bottom: 0;
+      margin-bottom: 5rem;
+    }
   }
   &__title {
     margin-bottom: 3.2rem;
@@ -20,11 +47,17 @@
   }
   &__title:first-of-type {
     text-align: right;
+    @media screen and (max-width: 576px) {
+      text-align-last: left;
+    }
   }
   ul.main-footer__items {
     text-align: right;
     li:not(:last-of-type) {
       margin-bottom: 3.6rem;
+    }
+    @media screen and (max-width: 576px) {
+      text-align-last: left;
     }
   }
   &__subtitle {
@@ -38,11 +71,17 @@
   }
   &__content {
     text-align: center;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 6rem;
+      order: 1;
+      flex: 0 0 100%;
+    }
   }
   &__logo {
     margin-bottom: 1.6rem;
   }
   &__text {
+    margin: 0 auto;
     margin-bottom: 4.9rem;
     max-width: 50rem;
     line-height: 1.654;
@@ -71,6 +110,14 @@
     padding-left: 5.1rem;
     padding-bottom: 5.1rem;
     border-left: 1px solid #d4d4d4;
+    @media screen and (max-width: 992px) {
+      order: 3;
+      margin-left: 0;
+    }
+    @media screen and (max-width: 576px) {
+      padding-left: 5rem;
+      border-left: none;
+    }
     li:not(:last-of-type) {
       margin-bottom: 3rem;
     }
