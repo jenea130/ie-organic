@@ -1,5 +1,8 @@
 .discover {
   margin-bottom: 25.4rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 21rem;
+  }
   &__header {
     margin-bottom: 5rem;
     display: flex;

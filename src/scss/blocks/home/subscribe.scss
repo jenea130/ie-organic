@@ -4,6 +4,9 @@
   position: relative;
   border-radius: 3rem;
   overflow: hidden;
+  @media screen and (max-width: 576px) {
+    padding: 8rem 3rem;
+  }
   img {
     position: absolute;
     top: 0;
@@ -19,14 +22,27 @@
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
   }
   &__title {
     max-width: 36rem;
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+      margin-bottom: 3rem;
+    }
   }
   &__body {
     flex: 0 0 45.8%;
     display: flex;
     column-gap: 0.6rem;
+    @media screen and (max-width: 1200px) {
+    flex: 0 0 55%;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__input {
     flex: 1 0 auto;
@@ -37,6 +53,10 @@
     border-radius: 1.6rem;
     border: none;
     outline: none;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
     &::placeholder {
       font-family: var(--font-2);
       font-style: italic;
