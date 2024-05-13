@@ -43,6 +43,7 @@ if (!function_exists('ar_starter_setup')) :
 		register_nav_menus(
 			array(
 				'header' => esc_html__('Header', 'ie-organic'),
+				'footer' => esc_html__('Footer', 'ie-organic'),
 			)
 		);
 

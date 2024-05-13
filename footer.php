@@ -83,23 +83,24 @@ $logo = $header['logo'];
       </div>
       <div class="main-footer__utility">
         <h3 class="main-footer__title">Utility Pages</h3>
-        <ul class="main-footer__list">
-          <li>
-            <a href="">Style Guide</a>
-          </li>
-          <li>
-            <a href="">404 Not Found</a>
-          </li>
-          <li>
-            <a href="">Password Protected</a>
-          </li>
-          <li>
-            <a href="">Licences</a>
-          </li>
-          <li>
-            <a href="">Changelog</a>
-          </li>
-        </ul>
+        <?php wp_nav_menu([
+        'theme_location'  => 'footer',
+        'menu'            => '',
+        'container'       => '',
+        'container_class' => '',
+        'container_id'    => '',
+        'menu_class'      => 'main-footer__list',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'depth'           => 0,
+        'walker'          => '',
+      ]); ?> 
       </div>
     </div>
   </div>
