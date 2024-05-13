@@ -59,13 +59,13 @@ function bsv_eccommerce_register_required_plugins()
     /* /1*     'required' => true, *1/ */
     /* /1*     'external_url' => 'http://vps5.bludelego.com/plugins/advanced-bulk-edit-v1.3.zip' *1/ */
     /* /1* ), *1/ */
-    /* array( */
-    /*   'name' => 'All-in-One WP Migration', */
-    /*   'slug' => 'all-in-one-wp-migration', */
-    /*   'source' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip', */
-    /*   'required' => true, */
-    /*   'external_url' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip' */
-    /* ), */
+    array( 
+      'name' => 'All-in-One WP Migration', 
+      'slug' => 'all-in-one-wp-migration', 
+      'source' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip', 
+      'required' => true, 
+      'external_url' => 'http://vps5.bludelego.com/plugins/all-in-one-wp-migration-7-79.zip' 
+    ), 
     array( 
       'name' => 'Advanced custom fields', 
       'slug' => 'advanced-custom-fields', 
@@ -89,12 +89,12 @@ function bsv_eccommerce_register_required_plugins()
     /* //   'name'             => 'AddToAny Share Buttons', */
     /* //   'slug'             => 'add-to-any', */
     /* // ), */
-    /* array( */
-    /*   'name' => 'Tiny Mc Advanced', */
-    /*   'slug' => 'tinymce-advanced', */
-    /*   'required' => true, */
-    /*   'force_activation' => true */
-    /* ), */
+    array( 
+      'name' => 'Tiny Mc Advanced', 
+      'slug' => 'tinymce-advanced', 
+      'required' => true, 
+      'force_activation' => true 
+    ), 
     /* //    array( */
     /* //      'name'             => 'WP-PageNavi', */
     /* //      'slug'             => 'wp-pagenavi', */
@@ -151,12 +151,12 @@ function bsv_eccommerce_register_required_plugins()
     /* //			'name'             => 'Easy Auto SKU Generator', */
     /* //			'slug'             => 'easy-woocommerce-auto-sku-generator' */
     /* //		), */
-    /* //		array( */
-    /* //			'name'             => 'Query Monitor', */
-    /* //			'slug'             => 'query-monitor', */
-    /* //			'required'         => true, */
-    /* //			'force_activation' => true */
-    /* //		), */
+    array( 
+    	'name'             => 'Query Monitor', 
+    	'slug'             => 'query-monitor', 
+    	'required'         => true, 
+    	'force_activation' => true 
+    ), 
     /* //		array( */
     /* //			'name'             => 'Cookie Notice', */
     /* //			'slug'             => 'cookie-notice' */
@@ -183,7 +183,7 @@ function bsv_eccommerce_register_required_plugins()
     /* //		), */
   );
   $config = array(
-    'id' => 'bs-vite',
+    'id' => 'bs-organic',
     // Unique ID for hashing notices for multiple instances of TGMPA.
     'default_path' => '',
     // Default absolute path to bundled plugins.

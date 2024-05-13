@@ -1,2 +1,78 @@
 .main-footer {
+  margin-bottom: 13.8rem;
+  &__wrap {
+    display: flex;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  &__contact {
+    padding-bottom: 5.1rem;
+    padding-right: 5.1rem;
+    margin-right: 6.2rem;
+    border-right: 1px solid #d4d4d4;
+  }
+  &__title {
+    margin-bottom: 3.2rem;
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--accent);
+  }
+  &__title:first-of-type {
+    text-align: right;
+  }
+  ul.main-footer__items {
+    text-align: right;
+    li:not(:last-of-type) {
+      margin-bottom: 3.6rem;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    line-height: 1.65;
+    color: var(--text-color);
+    a {
+      font-weight: 400;
+    }
+  }
+  &__content {
+    text-align: center;
+  }
+  &__logo {
+    margin-bottom: 1.6rem;
+  }
+  &__text {
+    margin-bottom: 4.9rem;
+    max-width: 50rem;
+    line-height: 1.654;
+  }
+  &__socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    li {
+      position: relative;
+      width: 6rem;
+      height: 6rem;
+      background: #e5e5e5;
+      border-radius: 50%;
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 2.1rem;
+      }
+    }
+  }
+  &__utility {
+    margin-left: 6.1rem;
+    padding-left: 5.1rem;
+    padding-bottom: 5.1rem;
+    border-left: 1px solid #d4d4d4;
+    li:not(:last-of-type) {
+      margin-bottom: 3rem;
+    }
+  }
 }
