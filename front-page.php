@@ -19,6 +19,7 @@ get_header();
 <?php get_template_part('template-parts/home/juice'); ?>
 <div class="container">
   <?php get_template_part('template-parts/home/discover'); ?>
+  <?php get_template_part('template-parts/home/subscribe'); ?>
 </div>
 
 
