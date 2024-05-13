@@ -1,6 +1,6 @@
 .juice {
   padding: 18.7rem 0;
-  margin-bottom: 17.7rem;
+  margin-bottom: 18rem;
   background: #f1f8f4;
   @media screen and (max-width: 576px) {
     padding: 12rem 0;
@@ -8,6 +8,7 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 4.2rem;
     row-gap: 4rem;
     @media screen and (max-width: 1200px) {
@@ -21,7 +22,7 @@
   &__item {
     position: relative;
     flex: 1;
-    padding-bottom: 30%;
+    padding-bottom: 30.5%;
     @media screen and (max-width: 1200px) {
       flex: 1 0 47%;
       padding-bottom: 46%;
