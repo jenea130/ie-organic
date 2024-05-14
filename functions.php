@@ -32,6 +32,7 @@ require_once __DIR__ . '/components/btnComponent.php';
 require_once __DIR__ . '/components/ratingComponents.php';
 require_once __DIR__ . '/components/ratingCustomer.php';
 require_once __DIR__ . '/components/productsLoopComponent.php';
+require_once __DIR__ . '/components/pageIntroComponent.php';
 require_once __DIR__ . '/inc/ar-post-type.php'; 
 require_once __DIR__ . '/inc/ar-taxonomy.php'; 
 /* require_once __DIR__ . '/inc/activate-plugin.php'; */

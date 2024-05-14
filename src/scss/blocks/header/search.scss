@@ -1,6 +1,7 @@
 .search {
   position: relative;
   width: 37.6rem;
+  cursor: pointer;
   @media screen and (max-width: 1500px) {
     width: auto;
   }
@@ -47,6 +48,7 @@
     border-radius: 36px;
     border: none;
     outline: none;
+    cursor: pointer;
     &:focus {
       outline: 1px solid #e0e0e0;
     }
