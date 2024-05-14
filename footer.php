@@ -25,6 +25,14 @@
 <?php
 $header = get_field('header', 'option');
 $logo = $header['logo'];
+$footer = get_field('footer', 'option');
+$email = $footer['email'];
+$phone_number = $footer['phone_number'];
+$full_address = $footer['full_address'];
+$socials = $footer['socials'];
+$title_1 = $footer['title_1'];
+$title_2 = $footer['title_2'];
+$text = $footer['text'];
 ?>
 
 
@@ -32,19 +40,20 @@ $logo = $header['logo'];
   <div class="container">
     <div class="main-footer__wrap">
       <div class="main-footer__contact">
-        <h3 class="main-footer__title">Contact Us</h3>
+        <h3 class="main-footer__title"><?php echo $title_1; ?></h3>
         <ul class="main-footer__items">
           <li>
             <h4 class="main-footer__subtitle">Email</h4>
-            <a href="">needhelp@Organia.com</a>
+            <a href="mailto:<?php echo $email; ?>" target="_blank"><?php echo $email; ?></a>
           </li>
           <li>
             <h4 class="main-footer__subtitle">Phone</h4>
-            <a href="">666 888 888</a>
+
+            <a href="tel:<?php echo clear_phone($phone_number); ?>" target="_blank"><?php echo $phone_number; ?></a>
           </li>
           <li>
             <h4 class="main-footer__subtitle">Address</h4>
-            <a href="">88 road, borklyn street, USA</a>
+            <a href=""><?php echo $full_address; ?></a>
           </li>
         </ul>
       </div>
@@ -56,51 +65,39 @@ $logo = $header['logo'];
             </a>
           </div>
         </div>
-        <div class="main-footer__text text">Simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum simply dummy text of the printing </div>
+        <div class="main-footer__text text"><?php echo $text; ?></div>
         <ul class="main-footer__socials">
-          <li>
-            <a href="">
-              <?php get_template_part('template-parts/icons/icon-instagram'); ?>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <?php get_template_part('template-parts/icons/icon-facebook'); ?>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <?php get_template_part('template-parts/icons/icon-twitter'); ?>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <?php get_template_part('template-parts/icons/icon-pintrest'); ?>
-            </a>
-          </li>
+          <?php foreach ($socials as $item) : ?>
+            <?php
+            $icon = $item['icon'];
+            $url = $item['url'];
+            ?>
+            <li>
+              <a href="<?php echo $url; ?>" target="_blank"><?php echo $icon; ?></a>
+            </li>
+          <?php endforeach; ?>
         </ul>
       </div>
       <div class="main-footer__utility">
-        <h3 class="main-footer__title">Utility Pages</h3>
+        <h3 class="main-footer__title"><?php echo $title_2; ?></h3>
         <?php wp_nav_menu([
-        'theme_location'  => 'footer',
-        'menu'            => '',
-        'container'       => '',
-        'container_class' => '',
-        'container_id'    => '',
-        'menu_class'      => 'main-footer__list',
-        'menu_id'         => '',
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu',
-        'before'          => '',
-        'after'           => '',
-        'link_before'     => '',
-        'link_after'      => '',
-        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        'depth'           => 0,
-        'walker'          => '',
-      ]); ?> 
+          'theme_location'  => 'footer',
+          'menu'            => '',
+          'container'       => '',
+          'container_class' => '',
+          'container_id'    => '',
+          'menu_class'      => 'main-footer__list',
+          'menu_id'         => '',
+          'echo'            => true,
+          'fallback_cb'     => 'wp_page_menu',
+          'before'          => '',
+          'after'           => '',
+          'link_before'     => '',
+          'link_after'      => '',
+          'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+          'depth'           => 0,
+          'walker'          => '',
+        ]); ?>
       </div>
     </div>
   </div>
@@ -108,7 +105,6 @@ $logo = $header['logo'];
 <footer class="footer-copyright">
   <span class="footer-copyright__text">Copyright &copy; <strong>Organick</strong></span>
 </footer>
-
 
 </div>
 <?php wp_footer(); ?>
