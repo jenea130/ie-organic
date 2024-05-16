@@ -2,12 +2,12 @@
 
 <?php
 $page_intro = get_field('page_intro');
-pageIntroComponent($page_intro);
+pageIntroComponent($page_intro, 'page-intro--about');
 ?>
 
 <div class="container">
-
   <?php get_template_part('template-parts/about/creative'); ?>
 </div>
+<?php get_template_part('template-parts/about/market'); ?>
 
 <?php get_footer(); ?>

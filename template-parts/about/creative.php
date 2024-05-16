@@ -15,8 +15,7 @@ $button_text = $creative['button_text'];
     <div class="creative__content">
       <div class="creative__label label"><?php echo $label; ?></div>
       <h2 class="creative__title title"><?php echo $title; ?></h2>
-      <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-      <p>Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+      <?php echo $text; ?>
       <div class="creative__flex">
         <?php foreach ($items as $item) : ?>
           <?php

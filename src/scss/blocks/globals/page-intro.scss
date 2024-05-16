@@ -1,6 +1,16 @@
 .page-intro {
   position: relative;
   height: 45rem;
+  &.page-intro--about {
+    .page-intro__img {
+      @media screen and (max-width: 768px) {
+        object-position: left center;
+      }
+      @media screen and (max-width: 576px) {
+        object-position: -10rem center;
+      }
+    }
+  }
   &__img {
     position: absolute;
     top: 0;
