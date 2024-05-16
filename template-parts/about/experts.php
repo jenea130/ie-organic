@@ -25,6 +25,9 @@ $experts_posts = new WP_Query([
         $image = get_the_post_thumbnail_url();
         $terms = get_the_terms(get_the_ID(), 'job-experts');
         $job = $terms[0]->name;
+        $for_loop = get_field('for_loop');
+        $socials = $for_loop['socials'];
+        vardump($socials);
         ?>
 
         <a href="#" class="experts__item">
@@ -35,8 +38,21 @@ $experts_posts = new WP_Query([
             <h4 class="experts__subtitle"><?php echo $title; ?></h4>
             <div class="experts__footer">
               <div class="experts__job"><?php echo $job; ?></div>
-              <div class="experts__socials">
-              </div>
+              <ul class="experts__socials">
+                <?php foreach ($socials as $item) : ?>
+                  <?php
+                  $url = $item['url'];
+                  // $type = $item['type'];
+                  $type = 'instagram';
+                  $icon_url = 'template-parts/icons/icon-' . $type;
+                  ?>
+                  <li class="experts__icon">
+                    <a href="<?php echo $url ?>" class="experts__link">
+                      <?php get_template_part($icon_url); ?>
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
             </div>
           </div>
         </a>

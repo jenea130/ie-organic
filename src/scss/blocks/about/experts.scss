@@ -53,10 +53,16 @@
     font-size: 2.5rem;
     color: var(--accent);
   }
+  &__footer {
+    display: flex;
+  }
   &__job {
     font-family: var(--font-3);
     font-weight: 400;
     font-size: 2.2rem;
     color: var(--accent-light);
+  }
+  &__socials {
+    display: flex;
   }
 }
