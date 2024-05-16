@@ -7,6 +7,9 @@
   @media screen and (max-width: 768px) {
     margin-top: 12rem;
   }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 10rem;
+  }
   &__wrap {
     display: flex;
     column-gap: 5rem;
