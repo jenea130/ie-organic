@@ -8,7 +8,6 @@ $product_posts = new WP_Query([
   'post_type' => 'products',
   'posts_per_page' => 8
 ]);
-// vardump($product_posts->posts);
 ?>
 
 <div class="products">

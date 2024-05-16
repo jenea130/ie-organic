@@ -36,4 +36,33 @@ function my_custom_init()
 		'menu_icon'          => get_template_directory_uri() . '/assets/i/static/product.png',
 		'supports'           => array('title', 'thumbnail')
 	));
+
+	$label = 'Our Experts';
+
+	register_post_type('our-experts', array(
+		'labels'             => array(
+			'name'              => 'Our experts', // Основное название типа записи
+			'singular_name'     => 'Our experts', // отдельное название записи типа Book
+			'add_new'           => __('Add expert'),
+			'add_new_item'      => __('Add expert'),
+			'edit_item'         => __('Edit expert'),
+			'new_item'          => __('New expert'),
+			'view_item'         => __('View'),
+			'search_items'      => __('Search'),
+			'parent_item_colon' => '',
+			'menu_name'         => 'Our expert'
+		),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => 20,
+		'menu_icon'          => get_template_directory_uri() . '/assets/i/static/experts.png',
+		'supports'           => array('title', 'thumbnail')
+	));
 }
