@@ -27,10 +27,9 @@ $experts_posts = new WP_Query([
         $job = $terms[0]->name;
         $for_loop = get_field('for_loop');
         $socials = $for_loop['socials'];
-        vardump($socials);
         ?>
 
-        <a href="#" class="experts__item">
+        <div href="#" class="experts__item">
           <div class="experts__img">
             <img src="<?php echo $image; ?>" alt="">
           </div>
@@ -38,24 +37,25 @@ $experts_posts = new WP_Query([
             <h4 class="experts__subtitle"><?php echo $title; ?></h4>
             <div class="experts__footer">
               <div class="experts__job"><?php echo $job; ?></div>
-              <ul class="experts__socials">
-                <?php foreach ($socials as $item) : ?>
-                  <?php
-                  $url = $item['url'];
-                  // $type = $item['type'];
-                  $type = 'instagram';
-                  $icon_url = 'template-parts/icons/icon-' . $type;
-                  ?>
-                  <li class="experts__icon">
-                    <a href="<?php echo $url ?>" class="experts__link">
-                      <?php get_template_part($icon_url); ?>
-                    </a>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
+              <?php if ($socials) : ?>
+
+                <ul class="experts__socials">
+                  <?php foreach ($socials as $item) : ?>
+                    <?php
+                    $type = $item['type'];
+                    $icon_url = 'template-parts/icons/icon-' . $type;
+                    ?>
+                    <li class="experts__icon">
+                      <a href="<?php echo $url; ?>" class="experts__link">
+                        <?php get_template_part($icon_url); ?>
+                      </a>
+                    </li>
+                  <?php endforeach; ?>
+                </ul>
+              <?php endif; ?>
             </div>
           </div>
-        </a>
+        </div>
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>
     <?php endif; ?>
