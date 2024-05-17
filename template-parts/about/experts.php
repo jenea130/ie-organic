@@ -29,7 +29,7 @@ $experts_posts = new WP_Query([
         $socials = $for_loop['socials'];
         ?>
 
-        <div href="#" class="experts__item">
+        <div class="experts__item">
           <div class="experts__img">
             <img src="<?php echo $image; ?>" alt="">
           </div>
