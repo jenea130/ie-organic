@@ -1,0 +1,36 @@
+.tabs-product {
+  &__navs {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-bottom: 2.7rem;
+  }
+  &__nav {
+    display: inline-block;
+    padding: 2.3rem 6.1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--accent);
+    border-radius: 1.6rem;
+    background: #eff6f1;
+    cursor: pointer;
+    &.active {
+      color: #fff;
+      background: var(--accent);
+    }
+  }
+  &__body {
+    text-align: center;
+  }
+  &__tab {
+    display: none;
+  }
+  &__tab.active {
+    display: block;
+  }
+  &__tab {
+    margin: 0 auto;
+    max-width: 70%;
+    line-height: 1.654;
+  }
+}
