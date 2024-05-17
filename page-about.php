@@ -13,5 +13,8 @@ pageIntroComponent($page_intro, 'page-intro--about');
   <?php get_template_part('template-parts/about/experts'); ?>
 </div>
 <?php get_template_part('template-parts/about/offer'); ?>
+<div class="container">
+  <?php get_template_part('template-parts/home/subscribe'); ?>
+</div>
 
 <?php get_footer(); ?>

@@ -1,7 +1,17 @@
 .offer {
+  margin-bottom: 14.1rem;
   padding: 19.4rem 0 18.8rem;
   text-align: center;
   background: var(--accent);
+  @media screen and (max-width: 992px) {
+    padding: 16rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 9rem 0 12rem;
+  }
   &__label {
     margin-bottom: 0.9rem;
   }
@@ -10,11 +20,24 @@
   }
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 4rem;
     margin: 0 - 1rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
   }
   &__item {
     flex: 0 0 calc(100% / 4 - 2rem);
     margin: 0 1rem;
+    @media screen and (max-width: 768px) {
+      flex: 0 0 calc(100% / 2 - 2rem);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    &__item:not(:last-of-type) {
+      margin-bottom: 6rem;
+    }
   }
   &__img {
     position: relative;

@@ -1,6 +1,14 @@
 .experts {
   margin-bottom: 20.2rem;
-
+  @media screen and (max-width: 992px) {
+    margin-bottom: 16rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 12rem;
+  }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 9rem;
+  }
   &__content {
     text-align: center;
   }

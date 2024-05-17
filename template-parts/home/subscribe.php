@@ -1,5 +1,5 @@
 <?php
-$subscribe = get_field('subscribe');
+$subscribe = get_field('subscribe', 2);
 $image = $subscribe['image'];
 $title = $subscribe['title'];
 $placeholder = $subscribe['placeholder'];
