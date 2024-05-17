@@ -3,9 +3,14 @@
   padding: 19.6rem 0;
   background: #f9f8f8;
   @media screen and (max-width: 992px) {
+    margin-bottom: 14rem;
     padding: 13rem 0;
   }
+  @media screen and (max-width: 768px) {
+  margin-bottom: 11rem;
+  }
   @media screen and (max-width: 576px) {
+    margin-bottom: 9rem;
     padding: 10rem 0;
   }
   &__wrap {

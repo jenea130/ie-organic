@@ -12,5 +12,6 @@ pageIntroComponent($page_intro, 'page-intro--about');
 <div class="container">
   <?php get_template_part('template-parts/about/experts'); ?>
 </div>
+<?php get_template_part('template-parts/about/offer'); ?>
 
 <?php get_footer(); ?>
