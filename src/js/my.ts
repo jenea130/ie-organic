@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   mainMenu();
   fixedHeader();
-  searchPopup();
+  // searchPopup();
 });

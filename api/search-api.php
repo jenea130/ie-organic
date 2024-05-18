@@ -108,10 +108,21 @@ function pageSearchResults($data)
   }, $product_categories_result);
 
   return [
-    // "original" => $products,
-    "pages" => $pages_result,
-    "posts" => $posts_result,
-    "products" => $products_result,
-    "product_categories" => $product_categories_result,
+    [
+      "title" => "Pages",
+      "results" => $pages_result,
+    ],
+    [
+      "title" => "Posts",
+      "results" => $posts_result,
+    ],
+    [
+      "title" => "Products",
+      "results" => $products_result,
+    ],
+    [
+      "title" => "Product Categories",
+      "results" => $product_categories_result,
+    ],
   ];
 }
