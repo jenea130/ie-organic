@@ -11,12 +11,17 @@ export default function tabsProduct() {
       resetActive();
       item.classList.add("active");
       product_contents[index].classList.add("active");
+      setTimeout(() => {
+        product_contents[index].classList.add('show');
+      }, 500);
     })
   })
 
   function showFirst() {
     product_tabs[0].classList.add("active");
+    product_tabs[0].classList.add("show");
     product_contents[0].classList.add("active");
+    product_contents[0].classList.add("show");
   }
 
   function resetActive() {
@@ -25,6 +30,9 @@ export default function tabsProduct() {
     })
     product_contents.forEach(item => {
       item.classList.remove("active");
+    })
+    product_contents.forEach(item => {
+      item.classList.remove("show");
     })
   }
 }
