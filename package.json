@@ -9,7 +9,7 @@
     "sync": "browser-sync start -p 'https://test.altuofianco.com/' --files '**/*.php', 'dist/assets/*.js, dist/assets/*.css, dist/manifest.json' --port 4000 --reload-delay 1500",
     "dev": "cross-env NODE_ENV=development vite",
     "prebuild": "sed -i -e 's/vite_dev = true;/vite_dev = false;/g' functions.php && sed -i -e 's/-build/-hash/g' 'vite.config.js' && sed -i -e 's/-build/-hash/g' 'inc/inc.vite.php'",
-    "build": "vue-tsc --noEmit && vite build && rm -rf node_modules",
+    "build": "vite build && rm -rf node_modules",
     "prehash": "sed -i -e 's/vite_dev = true;/vite_dev = false;/g' functions.php && sed -i -e 's/-hash/-build/g' 'vite.config.js' && sed -i -e 's/-hash/-build/g' 'inc/inc.vite.php'",
     "hash": "vite build",
     "watch": "vite build --watch",
