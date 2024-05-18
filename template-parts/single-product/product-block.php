@@ -6,6 +6,9 @@ $products_info = get_field('products_info');
 $previous_price = $products_info['previous_price'];
 $current_price = $products_info['current_price'];
 $rating = $products_info['rating'];
+$text = $products_info['text'];
+$button_text = $products_info['button_text'];
+$items = $products_info['items'];
 $terms = get_the_terms($id, 'product-category');
 $cat = $terms[0]->name;
 ?>
@@ -20,25 +23,37 @@ $cat = $terms[0]->name;
     <div class="product-block__content">
       <h3 class="product-block__title"><?php echo $title; ?></h3>
       <?php ratingComponent($rating); ?>
-      <span class="product-block__price"><?php echo $previous_price; ?><strong><?php echo $current_price; ?></strong></span>
-      <div class="product-block__text text">Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</div>
+      <div class="product-block__price">
+        <span class="product-block__price-prev"><?php echo $previous_price; ?></span>
+        <div class="product-block__price-next"><?php echo $current_price; ?></div>
+      </div>
+      <div class="product-block__text text"><?php echo $text; ?></div>
       <footer class="product-block__footer">
         <span class="product-block__quantity">Quantity:</span>
         <div class="product-block__counter">
           <span>1</span>
         </div>
-        <?php btnComponent('#', 'Add To Card', ''); ?>
+        <?php btnComponent('#', $button_text, ''); ?>
       </footer>
     </div>
   </div>
   <div class="product-block__tabs tabs-product">
     <div class="tabs-product__navs">
-      <div class="tabs-product__nav">Tab 1</div>
-      <div class="tabs-product__nav">Tab 2</div>
+      <?php foreach ($items as $item) : ?>
+        <?php
+        $title = $item['title'];
+        // vardump($title);
+        ?>
+        <div class="tabs-product__nav"><?php echo $title; ?></div>
+      <?php endforeach; ?>
     </div>
     <div class="tabs-product__body">
-      <div class="tabs-product__tab">Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, ecology, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition. It offers about 8–10% carbs. Simple sugars — such as glucose and fructose — make up 70% and 80% of the carbs in raw.</div>
-      <div class="tabs-product__tab">Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have grown on the principles of health, ecology, and care. We aim to give our customers a healthy chemical-free meal for perfect nutrition. It offers about 8–10% carbs.</div>
+      <?php foreach ($items as $item) : ?>
+        <?php
+        $text = $item['text'];
+        ?>
+        <div class="tabs-product__tab"><?php echo $text; ?></div>
+      <?php endforeach; ?>
     </div>
   </div>
 </div>

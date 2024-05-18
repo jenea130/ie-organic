@@ -57,16 +57,19 @@
     margin-bottom: 2.7rem;
     align-items: center;
     column-gap: 0.9rem;
+  }
+  &__price-prev {
+    display: inline-block;
     font-weight: 600;
     font-size: 2rem;
     color: #b8b8b8;
     text-decoration: line-through;
-    strong {
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: var(--accent);
-      text-decoration: none !important;
-    }
+  }
+  &__price-next {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--accent);
   }
   &__text {
     margin-bottom: 3.5rem;
