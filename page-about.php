@@ -2,7 +2,8 @@
 
 <?php
 $page_intro = get_field('page_intro');
-pageIntroComponent($page_intro, 'page-intro--about');
+$title = $page_intro['title'];
+pageIntroComponent($page_intro, $title, 'page-intro--about');
 ?>
 
 <div class="container">

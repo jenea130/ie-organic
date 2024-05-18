@@ -13,7 +13,7 @@ export default function tabsProduct() {
       product_contents[index].classList.add("active");
       setTimeout(() => {
         product_contents[index].classList.add('show');
-      }, 500);
+      }, 300);
     })
   })
 

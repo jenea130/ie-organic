@@ -3,10 +3,10 @@
 *
 * @param string $class = '' | 'page_intro--small' | 'page_intro--big'
 */
-function pageIntroComponent($page_intro, $class = '')
+function pageIntroComponent($page_intro, $title, $class = '')
 { ?>
   <?php
-  $title = $page_intro['title'];
+  // $title = $page_intro['title'];
   $image = $page_intro['image'];
   ?>
   <div class="page-intro <?php echo $class; ?>">

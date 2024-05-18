@@ -42,7 +42,6 @@ $cat = $terms[0]->name;
       <?php foreach ($items as $item) : ?>
         <?php
         $title = $item['title'];
-        // vardump($title);
         ?>
         <div class="tabs-product__nav"><?php echo $title; ?></div>
       <?php endforeach; ?>
