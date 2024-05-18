@@ -14,6 +14,7 @@ require_once __DIR__ . '/src/vue/vue-functions.php';
 require_once __DIR__ . '/Api/call-api.php';
 require_once __DIR__ . '/Api/single-immobile-meta.php';
 require_once __DIR__ . '/inc/class-tgm-plugin-activation.php';
+require_once __DIR__ . '/api/search-api.php';
 require_once __DIR__ . '/inc/tgm_example.php';
 require_once __DIR__ . '/inc/urls-add-rewrite-rules.php';
 require_once __DIR__ . '/inc/ar-setup.php';
