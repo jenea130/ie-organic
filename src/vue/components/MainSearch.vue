@@ -32,12 +32,20 @@ onMounted(() => {
 <template>
   <div class="search">
     <div class="search__body" v-if="is_popup_open">
-      <input class="search__input" type="text" v-model="search_input" @input="getSearch">
+      <header class="search__header">
+        <input class="search__input" type="text" v-model="search_input" @input="getSearch">
+        <div @click="is_popup_open = false" class="search__close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z" />
+          </svg>
+        </div>
+      </header>
       <div class="search__list" v-if="search_input !== ''">
         <div v-if="has_errors" class="search__error">
           <h3 class="search__subtitle">No results found</h3>
         </div>
-        <div v-else-if="result && result.length" class="search__body">
+        <div v-else-if="result && result.length">
           <div class="search__block" v-for="(item, index) in result" :key="index">
             <div v-if="item.results && item.results.length">
               <h3 class="search__subtitle">{{ item.title }}</h3>
