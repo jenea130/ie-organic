@@ -7,7 +7,7 @@ pageIntroComponent($page_intro, $title, 'page-intro--shop');
 ?>
 
 <div class="container">
-  <?php get_template_part('template-parts/shop/producs-all'); ?>
+  <?php get_template_part('template-parts/shop/products-all'); ?>
   <?php get_template_part('template-parts/home/subscribe'); ?>
 </div>
 
