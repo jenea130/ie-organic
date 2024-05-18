@@ -12,7 +12,7 @@ const has_errors = ref(false);
 
 async function getSearch() {
   try {
-    const data = await axios.get(`http://lc-organic.local/wp-json/api/v1/search?s=${search_input.value}`);
+    const data = await axios.get(`/wp-json/api/v1/search?s=${search_input.value}`);
     result.value = data.data;
     has_errors.value = false;
   } catch (error) {
