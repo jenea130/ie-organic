@@ -10,8 +10,13 @@ $button_text = $future['button_text'];
 $service_posts1 = new WP_Query([
   'post_type' => 'services',
   'posts_per_page' => 3
-])
+]);
 
+$service_posts2 = new WP_Query([
+  'post_type' => 'services',
+  'posts_per_page' => 3,
+  'offset' => 3
+]);
 ?>
 <div class="future">
   <img src="<?php echo $image; ?>" alt="" class="future__img">
@@ -43,20 +48,25 @@ $service_posts1 = new WP_Query([
         <?php endif; ?>
       </div>
       <div class="future__col future__col2">
-        <?php foreach ($items_2 as $item) : ?>
-          <?php
-          $icon = $item['icon'];
-          $title = $item['title'];
-          $text = $item['text'];
-          ?>
-          <div class="future__item">
-            <div class="future__icon">
-              <?php echo $icon; ?>
+        <?php if ($service_posts2->have_posts()) : ?>
+          <?php while ($service_posts2->have_posts()) : ?>
+            <?php $service_posts2->the_post(); ?>
+            <?php
+            $icon = get_field('icon');
+            $title = get_the_title();
+            $text = get_the_excerpt();
+            $permalink = get_the_permalink();
+            ?>
+            <div class="future__item">
+              <div class="future__icon">
+                <?php echo $icon; ?>
+              </div>
+              <a href="<?php echo $permalink; ?>" class="future__subtitle"><?php echo $title; ?></a>
+              <div class="future__text text"><?php echo $text; ?></div>
             </div>
-            <h4 class="future__subtitle"><?php echo $title; ?></h4>
-            <div class="future__text text"><?php echo $text; ?></div>
-          </div>
-        <?php endforeach; ?>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
       </div>
     </div>
     <div class="future__align">
