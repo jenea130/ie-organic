@@ -1,7 +1,13 @@
 .fresh {
+  margin-bottom: 14rem;
   padding-top: 18.6rem;
   position: relative;
   height: 107.3rem;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 10rem;
+    padding-top: 10rem;
+    height: 90rem;
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -13,6 +19,7 @@
   }
   &__content {
     position: relative;
+    padding: 0 1rem;
     margin: 0 auto;
     text-align: center;
     max-width: 67rem;

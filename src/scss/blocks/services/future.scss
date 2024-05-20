@@ -76,11 +76,8 @@
     margin-bottom: 3.9rem;
   }
   &__icon {
-    margin-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
     height: 5.6rem;
-    @media screen and (max-width: 576px) {
-      margin-bottom: 0.9rem;
-    }
   }
   &__subtitle {
     margin-bottom: 0.5rem;
