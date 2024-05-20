@@ -21,6 +21,16 @@
       }
     }
   }
+  &.page-intro--services {
+    .page-intro__img {
+      @media screen and (max-width: 768px) {
+        object-position: -90rem center;
+      }
+      @media screen and (max-width: 576px) {
+      object-position: -110rem center;
+      }
+    }
+  }
   &__img {
     position: absolute;
     top: 0;
