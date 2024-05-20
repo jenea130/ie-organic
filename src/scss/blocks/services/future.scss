@@ -2,6 +2,18 @@
   position: relative;
   padding: 20.6rem 0 20.1rem;
   background: #f9f8f8;
+  @media screen and (max-width: 1200px) {
+    padding: 16rem 0;
+  }
+  @media screen and (max-width: 992px) {
+    padding: 14rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 9rem 0;
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -10,6 +22,9 @@
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
   &__content {
     position: relative;
@@ -17,6 +32,12 @@
     max-width: 60rem;
     text-align: center;
     z-index: 2;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 9rem;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 6rem;
+    }
   }
   &__label {
     margin-bottom: 1.1rem;
@@ -25,14 +46,31 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 14rem;
+    @media screen and (max-width: 1200px) {
+      column-gap: 8rem;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10rem;
+      column-gap: 6rem;
+    }
+    @media screen and (max-width: 576px) {
+      display: block;
+      margin-bottom: 7rem;
+    }
   }
   &__col {
     position: relative;
     flex: 0 0 28.3%;
     z-index: 2;
+    @media screen and (max-width: 1200px) {
+      flex: 1;
+    }
   }
   &__col1 {
     text-align: right;
+    @media screen and (max-width: 576px) {
+      text-align-last: left;
+    }
   }
   &__item:not(:last-of-type) {
     margin-bottom: 3.9rem;
@@ -40,6 +78,9 @@
   &__icon {
     margin-bottom: 0.4rem;
     height: 5.6rem;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 0.9rem;
+    }
   }
   &__subtitle {
     margin-bottom: 0.5rem;
@@ -50,6 +91,9 @@
   }
   &__text {
     line-height: 1.654;
+    @media screen and (max-width: 576px) {
+      text-align: left;  
+    }
   }
   &__align {
     position: relative;
