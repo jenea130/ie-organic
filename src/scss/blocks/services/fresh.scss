@@ -1,0 +1,47 @@
+.fresh {
+  padding-top: 17.9rem;
+  position: relative;
+  height: 107.3rem;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__content {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 67rem;
+    z-index: 2;
+  }
+  &__label {
+    margin-bottom: 0.7rem;
+  }
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    margin-bottom: 5rem;
+    line-height: 1.654;
+  }
+  &__circle {
+    position: relative;
+    margin: 0 auto;
+    width: 10.7rem;
+    height: 10.7rem;
+    border-radius: 50%;
+    text-align: left;
+    background: #7eb693;
+    box-shadow: -4px 10px 12px 0 #dbd1b5;
+    svg {
+      position: absolute;
+      top: 51%;
+      left: 53%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
