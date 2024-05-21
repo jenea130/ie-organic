@@ -29,6 +29,7 @@ require_once __DIR__ . '/shortcodes/full_address.php';
 require_once __DIR__ . '/shortcodes/vat.php';
 require_once __DIR__ . '/shortcodes/phone_number.php';
 require_once __DIR__ . '/shortcodes/email.php';
+require_once __DIR__ . '/shortcodes/flex_elements.php';
 require_once __DIR__ . '/components/btnComponent.php';
 require_once __DIR__ . '/components/ratingComponents.php';
 require_once __DIR__ . '/components/ratingCustomer.php';

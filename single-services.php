@@ -9,6 +9,7 @@ pageIntroComponent($page_intro, $title, 'page-intro--single-services');
 
 <div class="container">
   <?php get_template_part('template-parts/single-services/service-info'); ?>
+  <?php get_template_part('template-parts/home/subscribe'); ?>
 </div>
 
 <?php get_footer() ?>
