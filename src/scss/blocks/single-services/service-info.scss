@@ -31,10 +31,11 @@
     display: flex;
     column-gap: 2rem;
   }
-  &__wrap:not(:last-of-type) {
-    margin-bottom: 2.8rem;
-  }
+
   &__wrap:first-of-type {
+    margin-top: 7rem;
+  }
+  &__wrap + :not(.service-info__wrap) {
     margin-top: 7rem;
   }
   &__wrap:nth-of-type(2n) {
