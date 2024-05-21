@@ -1,0 +1,24 @@
+.service-info {
+  &__img {
+    margin-bottom: 7.8rem;
+  }
+  &__content {
+    margin: 0 auto;
+    max-width: 93.6rem;
+  }
+  h2 {
+    margin-bottom: 2.8rem;
+    font-family: var(--font-2);
+    font-weight: 800;
+    font-size: 5rem;
+    color: var(--accent);
+  }
+  p {
+    margin-bottom: 2.8rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.654;
+    color: var(--text-color);
+  }
+  
+}
