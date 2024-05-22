@@ -24,7 +24,6 @@
 @import "blocks/globals/title-intro";
 @import "blocks/globals/title";
 @import "blocks/globals/text";
-
 @import "blocks/globals/rating";
 @import "blocks/globals/page-intro";
 
@@ -60,3 +59,6 @@
 
 // Services Single
 @import "blocks/single-services/service-info";
+
+// Portfolio page
+@import "blocks/portfolio/portfolio-set";
