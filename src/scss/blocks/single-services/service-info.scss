@@ -31,9 +31,8 @@
     display: flex;
     column-gap: 2rem;
   }
-
-  &__wrap:first-of-type {
-    margin-top: 7rem;
+  &__wrap + .service-info__wrap {
+    margin-top: 2.8rem;
   }
   &__wrap + :not(.service-info__wrap) {
     margin-top: 7rem;
