@@ -19,6 +19,9 @@
   p:not(:last-of-type) {
     margin-bottom: 2.8rem;
   }
+  p:has(img) {
+    margin-bottom: 1.9rem !important;
+  }
   img {
     border-radius: 2rem;
   }
