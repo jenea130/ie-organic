@@ -20,6 +20,11 @@ $posts = new WP_Query([
         <div class="portfolio-set__item">
           <div class="portfolio-set__img">
             <img src="<?php echo $image; ?>" alt="">
+            <div class="portfolio-set__over">
+              <div class="portfolio-set__circle">
+                <?php get_template_part('template-parts/icons/icon-arrow-2'); ?>
+              </div>
+            </div>
           </div>
           <h4 class="portfolio-set__title"><?php echo $title; ?></h4>
           <div class="portfolio-set__label"><?php echo $cat; ?></div>
