@@ -94,4 +94,33 @@ function my_custom_init()
 		'menu_icon'          => get_template_directory_uri() . '/assets/i/static/service.png',
 		'supports'           => array('title', 'thumbnail', 'excerpt', 'editor')
 	));
+
+	$label = 'Portfolio';
+
+	register_post_type('portfolio', array(
+		'labels'             => array(
+			'name'              => 'Portfolio', // Основное название типа записи
+			'singular_name'     => 'Portfolio', // отдельное название записи типа Book
+			'add_new'           => __('Add Portfolio'),
+			'add_new_item'      => __('Add Portfolio'),
+			'edit_item'         => __('Edit Portfolio'),
+			'new_item'          => __('New Portfolio'),
+			'view_item'         => __('View'),
+			'search_items'      => __('Search'),
+			'parent_item_colon' => '',
+			'menu_name'         => 'Portfolio'
+		),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => 20,
+		'menu_icon'          => get_template_directory_uri() . '/assets/i/static/portfolio.png',
+		'supports'           => array('title', 'thumbnail')
+	));
 }
