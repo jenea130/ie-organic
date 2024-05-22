@@ -7,6 +7,7 @@ pageIntroComponent($page_intro, $title, 'page-intro--news');
 ?>
 
 <div class="container">
+  <?php get_template_part('template-parts/news/all-news'); ?>
   <?php get_template_part('template-parts/home/subscribe'); ?>
 </div>
 

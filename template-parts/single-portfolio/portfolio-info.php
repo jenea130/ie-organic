@@ -17,15 +17,16 @@ $title = get_the_title();
           <?php
           $type = $item['type'];
           $text = $item['text'];
+          $date = get_the_date();
           ?>
           <tr>
-            <?php if ($type === 'Date') : ?>
-              <td><?php echo $type ?></td>
-            <?php else : ?>
-              <td><?php echo $type ?></td>
-            <?php endif; ?>
+            <td><?php echo $type ?></td>
             <td>:</td>
-            <td><?php echo $text; ?></td>
+            <?php if ($type === 'Date') : ?>
+              <td><?php echo $date ?></td>
+            <?php else : ?>
+              <td><?php echo $text ?></td>
+            <?php endif; ?>
           </tr>
         <?php endforeach; ?>
       </table>
