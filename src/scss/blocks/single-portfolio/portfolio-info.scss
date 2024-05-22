@@ -1,20 +1,13 @@
 .portfolio-info {
   position: relative;
   margin-top: -17rem;
-  padding: 9.7rem 11.9rem 9.7rem 8.3rem;
+  margin-bottom: 6rem;
   background: #fff;
   border-radius: 3rem 3rem 0 0;
+  overflow: hidden;
   z-index: 2;
-  @media screen and (max-width: 992px) {
-    padding: 7.7rem 7.3rem;
-  }
-  @media screen and (max-width: 768px) {
-    padding: 5rem 5rem;
-  }
-  @media screen and (max-width: 576px) {
-    padding: 4rem 2.2rem;
-  }
-
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+  
   &__wrap {
     display: flex;
     justify-content: space-between;
@@ -24,9 +17,31 @@
     }
   }
   &__content {
-    flex: 0 0 60%;
+    flex: 0 0 63%;
+    padding: 9.7rem 7.9rem 9.7rem 8.3rem;
     @media screen and (max-width: 992px) {
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
+      padding: 9.7rem 7.9rem 5.7rem 8.3rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 7.7rem 5.9rem 5.7rem 6.3rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 6rem 4rem 4rem 4rem;
+    }
+  }
+  &__data {
+    flex: 0 0 40%;
+    padding: 9.7rem 9rem 9.7rem 7.3rem;
+    background: #fafafa;
+    @media screen and (max-width: 992px) {
+      padding: 4.7rem 9rem 9.7rem 7.3rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 4.7rem 5.9rem 6.7rem 6.3rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 3rem 2rem 5rem 2rem;
     }
   }
   &__title {

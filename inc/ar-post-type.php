@@ -121,6 +121,6 @@ function my_custom_init()
 		'hierarchical'       => false,
 		'menu_position'      => 20,
 		'menu_icon'          => get_template_directory_uri() . '/assets/i/static/portfolio.png',
-		'supports'           => array('title', 'thumbnail')
+		'supports'           => array('title', 'thumbnail', 'editor')
 	));
 }

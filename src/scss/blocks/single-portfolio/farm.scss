@@ -1,0 +1,25 @@
+.farm {
+  margin: 0 auto 12rem;
+  max-width: 93.6rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10rem;
+  }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 7rem;
+  }
+  h3 {
+    margin-bottom: 2.4rem;
+    font-family: var(--font-2);
+    font-weight: 800;
+    font-size: 3.5rem;
+  }
+  p {
+    line-height: 1.654;
+  }
+  p:not(:last-of-type) {
+    margin-bottom: 2.8rem;
+  }
+  img {
+    border-radius: 2rem;
+  }
+}

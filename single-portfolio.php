@@ -9,6 +9,7 @@ pageIntroComponent($page_intro, '', 'page-intro--single-portfolio');
 
 <div class="container">
   <?php get_template_part('template-parts/single-portfolio/portfolio-info'); ?>
+  <?php get_template_part('template-parts/single-portfolio/farm'); ?>
   <?php get_template_part('template-parts/home/subscribe'); ?>
 </div>
 

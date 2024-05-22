@@ -1,34 +1,33 @@
 <?php
+$portfolio_info = get_field('portfolio_info');
+$text = $portfolio_info['text'];
+$items = $portfolio_info['items'];
+$title = get_the_title();
 ?>
 
 <div class="portfolio-info">
   <div class="portfolio-info__wrap">
     <div class="portfolio-info__content">
-      <h2 class="portfolio-info__title title">Black Raspberry</h2>
-      <div class="portfolio-info__text text">Established fact that a reader will be distracted by the readable content of a page when looking a layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</div>
+      <h2 class="portfolio-info__title title"><?php echo $title; ?></h2>
+      <div class="portfolio-info__text text"><?php echo $text ?></div>
     </div>
     <div class="portfolio-info__data">
       <table>
-        <tr>
-          <td>Date</td>
-          <td>:</td>
-          <td>December 4, 2022</td>
-        </tr>
-        <tr>
-          <td>Client</td>
-          <td>:</td>
-          <td>Kevin Martin</td>
-        </tr>
-        <tr>
-          <td>Category</td>
-          <td>:</td>
-          <td>Agriculture , Eco</td>
-        </tr>
-        <tr>
-          <td>Service</td>
-          <td>:</td>
-          <td>Organic Products</td>
-        </tr>
+        <?php foreach ($items as $item) : ?>
+          <?php
+          $type = $item['type'];
+          $text = $item['text'];
+          ?>
+          <tr>
+            <?php if ($type === 'Date') : ?>
+              <td><?php echo $type ?></td>
+            <?php else : ?>
+              <td><?php echo $type ?></td>
+            <?php endif; ?>
+            <td>:</td>
+            <td><?php echo $text; ?></td>
+          </tr>
+        <?php endforeach; ?>
       </table>
     </div>
   </div>
