@@ -53,6 +53,13 @@
       height: 78rem;
     }
   }
+  &.page-intro--news {
+    .page-intro__img {
+      @media screen and (max-width: 576px) {
+      object-position: -90rem center;
+      }
+    }
+  }
   &__img {
     position: absolute;
     top: 0;
