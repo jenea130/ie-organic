@@ -15,16 +15,17 @@ $posts = new WP_Query([
         $image = get_the_post_thumbnail_url();
         $terms = get_the_terms(get_the_ID(), 'portfolio-category');
         $cat = $terms[0]->name;
+        $permalink = get_the_permalink();
         ?>
 
         <div class="portfolio-set__item">
           <div class="portfolio-set__img">
             <img src="<?php echo $image; ?>" alt="">
-            <div class="portfolio-set__over">
+            <a href="<?php echo $permalink; ?>" class="portfolio-set__over">
               <div class="portfolio-set__circle">
                 <?php get_template_part('template-parts/icons/icon-arrow-2'); ?>
               </div>
-            </div>
+            </a>
           </div>
           <h4 class="portfolio-set__title"><?php echo $title; ?></h4>
           <div class="portfolio-set__label"><?php echo $cat; ?></div>

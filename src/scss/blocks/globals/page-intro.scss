@@ -44,6 +44,15 @@
       }
     }
   }
+  &.page-intro--single-portfolio {
+    height: 89.8rem;
+    @media screen and (max-width: 992px) {
+      height: 82rem;
+    }
+    @media screen and (max-width: 768px) {
+      height: 78rem;
+    }
+  }
   &__img {
     position: absolute;
     top: 0;

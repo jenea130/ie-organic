@@ -1,0 +1,55 @@
+.portfolio-info {
+  position: relative;
+  margin-top: -17rem;
+  padding: 9.7rem 11.9rem 9.7rem 8.3rem;
+  background: #fff;
+  border-radius: 3rem 3rem 0 0;
+  z-index: 2;
+  @media screen and (max-width: 992px) {
+    padding: 7.7rem 7.3rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 5rem 5rem;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 4rem 2.2rem;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+  }
+  &__content {
+    flex: 0 0 60%;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__item {
+    display: flex;
+    align-items: baseline;
+  }
+  &__desc {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.654;
+    color: #525c60;
+  }
+  table {
+    border-spacing: 10px 15px;
+  }
+  td:not(:last-of-type) {
+    font-family: var(--font-2);
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--accent);
+  }
+}

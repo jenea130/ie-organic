@@ -3,7 +3,7 @@
 *
 * @param string $class = '' | 'page_intro--small' | 'page_intro--big'
 */
-function pageIntroComponent($page_intro, $title, $class = '')
+function pageIntroComponent($page_intro, $title = '', $class = '')
 { ?>
   <?php
   // $title = $page_intro['title'];

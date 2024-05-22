@@ -1,7 +1,5 @@
 <?php
 $service_info = get_field('service_info');
-$image_1 = $service_info['image_1'];
-$image_2 = $service_info['image_2'];
 $image = get_the_post_thumbnail_url();
 ?>
 
