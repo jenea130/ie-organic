@@ -6,10 +6,19 @@
   box-shadow: 0 14px 36px 0 rgba(204, 204, 204, 0.25);
   background: #fff;
   z-index: 2;
+  @media screen and (max-width: 576px) {
+    padding: 5.6rem 4.2rem;
+  }
   &__header {
     display: flex;
     column-gap: 3rem;
     margin-bottom: 2rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
+  }
+  &__date {
+    margin-bottom: 1.5rem;
   }
   &__author {
     display: flex;
@@ -22,6 +31,12 @@
 
   &__title {
     margin-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+      font-size: 5.4rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 4rem;
+    }
   }
   &__text {
     max-width: 70rem;
