@@ -8,5 +8,8 @@ $page_intro = get_field('page_intro');
 pageIntroComponent($page_intro, '', 'page-intro--single-news');
 ?>
 
-<?php get_footer(); ?>
+<div class="container">
+  <?php get_template_part('template-parts/single-news/news-info'); ?>
+</div>
 
+<?php get_footer(); ?>

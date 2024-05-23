@@ -83,6 +83,9 @@
     column-gap: 0.8rem;
   }
   &__logo {
+    svg {
+      fill: #EFD372;
+    }
     span {
       font-family: var(--font-2);
       color: var(--accent);
