@@ -1,6 +1,9 @@
 .news-block {
   margin: 0 auto 12.1rem;
   max-width: 93.6rem;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 9rem;
+  }
   p {
     margin-bottom: 2.2rem;
     line-height: 1.654;
@@ -11,6 +14,9 @@
     font-weight: 800;
     font-size: 5rem;
     color: var(--accent);
+    @media screen and (max-width: 576px) {
+      font-size: 4rem;
+    }
   }
   h3 {
     margin-bottom: 2.3rem;
@@ -18,6 +24,9 @@
     font-weight: 800;
     font-size: 3.5rem;
     color: var(--accent);
+    @media screen and (max-width: 576px) {
+      font-size: 3rem;
+    }
   }
 
   ul,
@@ -63,5 +72,12 @@
     color: var(--accent);
     border-radius: 3rem;
     background: #f1edea;
+    @media screen and (max-width: 768px) {
+      padding: 5rem 4rem;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 4rem 3rem 2rem;
+      font-size: 1.6rem;
+    }
   }
 }

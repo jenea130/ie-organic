@@ -13,13 +13,16 @@
   &__header {
     display: flex;
     column-gap: 3rem;
+    align-items: center;
     margin-bottom: 2rem;
     @media screen and (max-width: 576px) {
       display: block;
     }
   }
   &__date {
-    margin-bottom: 1.5rem;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 1.5rem;
+    }
   }
   &__author {
     display: flex;
