@@ -36,7 +36,8 @@
               </div>
               <h4 class="all-news__subtitle"><?php echo $title; ?></h4>
               <div class="all-news__text text"><?php echo $excerpt; ?></div>
-              <?php btnComponent('#', 'Read More', 'btn--accent'); ?>
+              
+              <?php btnComponent($permalink, 'Read More', 'btn--accent'); ?>
             </div>
           </div>
 
