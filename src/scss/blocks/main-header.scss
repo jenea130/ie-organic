@@ -50,7 +50,7 @@
   // }
   &__main-menu {
     position: relative;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1300px) {
       position: fixed;
       top: 0;
       left: 0;
@@ -58,7 +58,7 @@
   }
   &__sandwich {
     display: none;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1300px) {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -98,7 +98,10 @@
   .logo {
     margin-right: 14rem;
     z-index: 2;
-    @media screen and (max-width: 1100px) {
+    @media screen and (max-width: 1500px) {
+      margin-right: 10rem;
+    }
+    @media screen and (max-width: 1400px) {
       margin-right: 5rem;
     }
     @media screen and (max-width: 576px) {
